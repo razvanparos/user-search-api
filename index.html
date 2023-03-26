@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>GitHub user search app</title>
+</head>
+<body>
+
+  <main class="main">
+
+    <header>
+      <h1>devfinder</h1>
+      <div class="theme hidden">
+        <span style="letter-spacing: 4px;">DARK</span>
+        <img src="./assets/icon-moon.svg" alt="">
+      </div>
+    </header>
+
+
+    <div class="search-bar">
+      <div class="search-input">
+        <img src="./assets/icon-search.svg" alt="" width="30px">
+        <input type="text" placeholder="Search GitHub username..." class="search-input-value">
+      </div>
+      <div class="btn-div">
+        <p class="no-results hidden">No results</p>
+      <button class="search-btn">Search</button>
+      </div>
+      
+    </div>
+
+    <div class="content">
+      <div class="profile-pic"></div>
+      <div class="details">
+        <div class="profile-name">
+          <div class="name-and-joined">
+            <h1 class="name"></h1>
+            <p class="joined"></p>
+          </div>
+          
+          <p class="username"></p>
+        </div>
+        <p class="bio"></p>
+        <div class="numbers">
+          <div class="repos"><p>Repos</p><span class="repos-nr"></span></div>
+          <div class="followers"><p>Followers</p> <span class="followers-nr"></span></div>
+          <div class="following"><p>Following</p> <span class="following-nr"></span></div>
+
+        </div>
+        <div class="links">
+          <div class="location">
+            <img src="./assets/icon-location.svg" alt="">
+            <p></p>
+          </div>
+          <div class="twitter">
+            <img src="./assets/icon-twitter.svg" alt="">
+            <p></p>
+          </div>
+          <div class="site">
+            <img src="./assets/icon-website.svg" alt="">
+            <p></p>
+          </div>
+          <div class="company">
+            <img src="./assets/icon-company.svg" alt="">
+            <p></p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </main>
+
+
+</body>
+<script src="index.js"></script>
+</html>
