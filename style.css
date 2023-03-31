@@ -19,11 +19,13 @@
     /* border: 2px solid green; */
 }
 body{
+    width: 100vw;
     height: 100vh;
     display: flex;
     overflow: hidden;
 }
 .main{
+    width: calc(100%);
     margin: auto;
     width: 50%;
     height: 70vh;
@@ -64,6 +66,7 @@ header{
 }
 .search-input{
     display: flex;
+    width: 80%;
 
 }
 .search-input img{
@@ -73,7 +76,7 @@ header{
 .search-input-value{
     font-size: 1.2rem;
     border: 0;
-    width: 400px;
+    width: 500px;
 }
 ::placeholder { 
     color: var(--darkerblue);
@@ -85,7 +88,7 @@ header{
     background-color: var(--blue);
     color: white;
     border-radius: 10px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     border: 0;
     height: 70%;
     width: 35%;
@@ -203,10 +206,12 @@ input:hover{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    column-gap: 50px;
+    column-gap: 10px;
 }
 
 .no-results{
+    width: 50%;
+    text-align: center;
     color: red;
     font-size: 1.2rem;
     font-weight: 700;
@@ -278,9 +283,47 @@ input:hover{
     }
 }
 @media  (max-width: 530px){
-     .content{
+    .bio{
+        height: fit-content;
+    }
+    img{
+        width: 20px;
+    }
+    .search-btn{
+        font-size: 0.6rem;
+        width: 50px;
+    }
+    .no-results{
+        font-size: 0.6rem;
+    }
+    .search-bar{
+        
+        height: 70px;
+        padding: 0px 10px;
+    }
+    .search-input-value{
+        width: 70%;
+        font-size: 0.6rem;
+    }
+    .name, .joined, .username, .bio{
+        font-size: 1rem;
+    }
+    .numbers{
+        flex-direction: column;
+    }
+    body{
         width: 100vw;
+        overflow: scroll;
+        margin-bottom: 60px;
+    }
+     .content{
+        width: 90vw;
+        height: fit-content;
+        
      }
+     .search-bar{
+        width: 90vw;
+    }
 }
 @media  (max-height: 811px){
      .content{
@@ -293,7 +336,7 @@ input:hover{
 }
 @media  (max-height: 633px){
      
-    
+   
     body{
         overflow: scroll;
         height:fit-content;
