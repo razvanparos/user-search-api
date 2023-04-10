@@ -84,14 +84,15 @@ header{
 }
 .search-btn{
     position: relative;
-   
+    width: fit-content;
     background-color: var(--blue);
     color: white;
     border-radius: 10px;
     font-size: 1.2rem;
     border: 0;
+    padding: 0px 5px;
     height: 70%;
-    width: 35%;
+    
 }
 .search-btn:hover{
     cursor: pointer;
@@ -224,9 +225,15 @@ input:hover{
     cursor: pointer;
 }
 
-@media (max-width: 1490px){
+@media (max-width: 1459px){
     .search-btn{
         font-size: 1rem;
+    }
+    .search-btn{
+        padding: 0px 5px;
+    }
+    .main{
+        width: 70vw;
     }
 }
 
@@ -238,9 +245,10 @@ input:hover{
     .search-btn{
         width: 70px;
     }
+  
 }
 
-@media (max-width: 762px){
+@media (max-width: 772px){
     .main{
         margin: auto;
         height: 100vh;
@@ -323,6 +331,26 @@ input:hover{
      }
      .search-bar{
         width: 90vw;
+    }
+}
+@media  (max-width: 664px){
+    .content{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .profile-pic{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+    
+    }
+    .details{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body{
+        overflow: scroll;
     }
 }
 @media  (max-height: 811px){
